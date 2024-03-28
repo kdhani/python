@@ -44,24 +44,4 @@ pipeline {
                 sh 'pyb publish'
             }
         }
-
-        /*
-        stage('Deploy') {
-            steps {
-                // Deploy the packaged artifacts or perform any deployment tasks
-                // Example: sh 'python deploy.py'
-            }
-        }
-    }
-    
-    post {
-        success {
-            // Actions to perform if the pipeline succeeds
-            // For example, sending notifications or triggering downstream jobs
-        }
-        failure {
-            // Actions to perform if the pipeline fails
-            // For example, sending notifications or rolling back changes
-        }
-    } */
 }
