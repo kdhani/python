@@ -44,7 +44,8 @@ pipeline {
                 sh 'pyb publish'
             }
         }
-        
+
+        /*
         stage('Deploy') {
             steps {
                 // Deploy the packaged artifacts or perform any deployment tasks
@@ -62,5 +63,5 @@ pipeline {
             // Actions to perform if the pipeline fails
             // For example, sending notifications or rolling back changes
         }
-    }
+    } */
 }
