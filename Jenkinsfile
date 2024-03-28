@@ -19,7 +19,7 @@ pipeline {
                 // Install PyBuilder
                 sh 'pip install pybuilder'
                 
-                // Build the project using PyBuilder
+                // Build the project using PyBuilder, X= verbose
                 sh 'pyb -X'
             }
         }
@@ -33,7 +33,7 @@ pipeline {
         
         stage('Static Analysis') {
             steps {
-                // Perform static code analysis using PyBuilder
+                // Perform static code analysis using PyBuilder, to edit analysis modify build.py in project
                 sh 'pyb analyze'
             }
         }
