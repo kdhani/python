@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the source code from your version control system
-                git 'https://github.com/your/repository.git'
+                git 'https://github.com/kdhani/python.git'
             }
         }
         
