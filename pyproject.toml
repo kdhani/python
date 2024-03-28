@@ -1,0 +1,7 @@
+[tool.pybuilder]
+project_name = "My Python Project"
+project_version = "1.0"
+source_directories = ["src/main/python"]
+test_source_directories = ["src/unittest/python"]
+unittest_module = "unittest"
+build_dependencies = ["pytest"]
